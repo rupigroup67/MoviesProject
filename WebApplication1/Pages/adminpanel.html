@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adminpanel.css">
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <!-- FireBase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <!-- DataTable CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <!-- DataTable Scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <!-- Charts Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="background-color: #141E30;" onload="loadVars()">
+    <nav>
+		<div id="navBar">
+			<div id="logo">
+				<img onclick="location.href='homepage.html'" src="https://img.icons8.com/cotton/64/000000/tv-show.png"/>
+			</div>
+			<div id="links">
+				<button onclick="ToggleModal('login')" id="loginBTN">Log in</button>
+				<button onclick="ToggleModal('signup')" id="signupBTN">Sign up</button>
+			</div>
+			<div id="profile">
+				<p onclick="Logout()">Disconnect</p>
+				<img id="profile-picture" src="">
+			</div>
+		</div>
+	</nav>
+    <div id="welcome">
+        <h1 id="nameWelcoming"></h1>
+    </div>
+    <div class="charts">
+        <div class="entriesChartDiv">
+            <canvas id="entriesChart"></canvas>
+        </div>
+        <div class="mostLikedChartDiv">
+            <canvas id="mostLikedChart"></canvas>
+        </div>
+    </div>
+    <div class="div"></div>
+    <div class="selectTables">
+        <div class="multiselect">
+            <div class="selectBox" onclick="showCheckboxes()">
+                <select>
+                    <option>Choose tables to view</option>
+                </select>
+                <div class="overSelect"></div>
+            </div>
+            <div id="checkboxes">
+                <label for="one">
+                    <input onchange="toggleTable(this.id)" type="checkbox" id="one" />First checkbox
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="tablesDiv">
+
+    </div>
+
+</body>
+<script src="../Scripts/firebaseConfig.js"></script>
+<script src="../Scripts/firebase.js"></script>
+<script src="../Scripts/adminpanel.js"></script>
+<script src="../Scripts/chart.js"></script>
+<script src="../Scripts/nav.js"></script>
+<script src="../Scripts/signupLogin.js"></script>
+<script src="../Scripts/generalScripts.js"></script>
+</html>

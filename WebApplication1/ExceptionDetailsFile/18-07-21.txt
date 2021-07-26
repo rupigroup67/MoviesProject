@@ -1,0 +1,408 @@
+-----------Exception Details on  07/18/2021 9:42:32 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:42:32 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:42:43 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:42:43 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:43:18 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:43:18 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:44:35 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:44:35 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:46:33 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:46:33 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:46:38 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:46:38 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:46:40 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:46:40 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:46:40 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:46:40 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:46:40 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:46:40 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:46:40 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:46:40 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:50:42 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:50:42 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:50:44 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:50:44 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:50:47 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:50:47 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:50:52 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:50:52 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:52:09 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:52:09 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:53:07 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:53:07 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/18/2021 9:53:39 AM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/18/2021 9:53:39 AM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : The parameterized query '(@tvshow_id int,@first_air_date nvarchar(10),@name nvarchar(22),' expects the parameter '@poster_path', which was not supplied.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

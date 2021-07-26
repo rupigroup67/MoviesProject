@@ -1,0 +1,1067 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+#autoComplete li{
+    padding:4px;
+}
+#autoComplete hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #141e3091, rgba(0, 0, 0, 0));
+}
+.reviewDetails hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #141e3091, rgba(0, 0, 0, 0));
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+#myimg{
+    width:100px;
+    height: 100px;
+    border: 1px solid red;
+}
+#profile p{
+    margin-bottom: 0;
+    padding: 5px 10px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    color: black;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  #advSearchBTN{
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 10px;
+    padding: 5px;
+    background-color: rgb(202, 173, 9);
+    border-radius: 5px;
+    width: 55px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+  }
+  #advSearchBTN:hover{
+    background-color:gold ;
+  }
+  #profile p:hover{
+    margin-bottom: 0;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    font-weight: bold;
+  }
+#uploadCheckMark{
+    width:30px;
+    display: none;
+}
+#autoComplete{
+    position:absolute;
+    top:90%;
+    width: 320px;
+    border-radius: 0px 0px 10px 10px;
+    color:rgb(59, 87, 129);
+    background-color: rgba(255, 255, 255, 0.808);
+    box-shadow: 0px 5px 5px #141e3091;
+    backdrop-filter: blur(10px);
+}
+.progress-container {
+    display: none;
+    height: 0.8rem;
+    width: 32rem;
+    border-radius: 0.4rem;
+  
+    background: #000;
+  }
+  
+  .progress-container .progress {
+    height: 100%;
+    width: 0;
+    border-radius: 0.4rem;
+  
+    background: #ff4754;
+  
+    transition: width 0.4s ease;
+  }
+  
+body {
+    margin-top: 50px;
+    background: #141E30;
+}
+#body{
+    filter: blur(0px);
+    pointer-events: all;
+}
+
+#likedEpisodes{
+    display: flex;
+    width:95%;
+    justify-content: center;
+    margin:auto;
+    flex-wrap: wrap;
+}
+.episode .like{
+    align-self: center;
+    margin:10px 0px;
+    height:35px;
+    width:35px;
+    cursor:pointer;
+}
+nav {
+    background: rgba(128, 128, 128, 0.5);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+#navBar {
+    margin: auto;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#links {
+    display: flex;
+}
+
+.searchBar {
+    flex: 4;
+    display: none;
+}
+
+.searchBar #searchInput {
+    max-width: 700px;
+    min-width: 300px;
+    width: 80%;
+    margin: auto;
+    height: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+    outline-style: none;
+}
+
+.searchBar #searchInput::placeholder {
+    color: rgb(107, 107, 107);
+    font-weight: normal;
+}
+
+
+#logo {
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+}
+
+#logo img {
+    height: 90%;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#profile-picture {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 1px solid rgb(34, 34, 34);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.548);
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+}
+#profile-picture img{
+    object-fit: cover;
+}
+
+#profile-dropdown {
+    background: linear-gradient(rgba(128, 128, 128, 0.5), #8b939ab2);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-80px);
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -1px 5px 5px  rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+#profile-dropdown.active {
+    opacity: 1;
+    transform: translateY(76px);
+    transform-origin: top;
+}
+
+li {
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    padding: 5px 2px;
+}
+
+li:hover {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.separator {
+    height: 40px;
+    width: 2px;
+    background: black;
+}
+
+#loginBTN,#signupBTN,#logoutBTN{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+    align-self: center;
+}
+
+#recommendedForYou{
+    font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+#welcome {
+    margin: 100px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.68, -0.25, 0.27, 1.25);
+}
+
+#search {
+    position: relative;
+    z-index: 10;
+    display: flex;
+}
+
+#nameWelcoming {
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 0px 0px 10px black;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+.profile-img{
+    position: relative;
+}
+#signupForm .profile-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#select {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(206, 206, 206);
+    box-shadow: 0px 0px 5px rgb(182, 182, 182);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    outline: none;
+    border-radius: 7px;
+}
+.closePopUp{
+    position: absolute;
+    left:5%;
+    top:2%;
+    font-size: 25px;
+    cursor: pointer;
+}
+#general {
+    margin-top: 150px;
+}
+
+#tvShowName {
+    text-align: center;
+    margin-right: 5px;
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#getTV {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #6b3186;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+}
+
+#getTV:hover {
+    background-color: #8d2eb6;
+}
+
+#ph {
+    display: flex;
+    width: 80%;
+    margin: 5px auto 10px auto;
+    color: white;
+    justify-content: center;
+}
+
+#ph h1 {
+    margin-bottom: 15px;
+}
+
+#ph>img {
+    margin: 10px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+    margin-right: 25px;
+}
+
+#ph p {
+    max-width: 500px;
+}
+
+#seasons {
+    margin-top: 15px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#seasons>div {
+    margin: 10px;
+    text-align: center;
+    color: white;
+}
+
+#seasons p {
+    margin-top: 5px;
+}
+
+#seasons img {
+    height: 150px;
+    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.61);
+    transition: all ease-in-out 0.25s;
+}
+
+#seasons img:hover {
+    -webkit-filter: brightness(120%);
+    opacity: 1;
+}
+
+#info {
+    transform: translateY(15%);
+}
+
+img {
+    border-radius: 10px;
+}
+
+#showEpisodes {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#episodes {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.episode {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    margin: 15px;
+    border-radius: 15px;
+    width: 220px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 0px 15px black;
+}
+
+.episode:hover {
+    animation-name: glow;
+    animation-duration: 1.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 20px black;
+    }
+    50% {
+        box-shadow: 0px 0px 15px grey;
+    }
+    100% {
+        box-shadow: 0px 0px 15px black;
+    }
+}
+
+.episode img {
+    width: 230px;
+    height: 130px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.episode p {
+    max-height: 140px;
+    overflow-y: hidden;
+    padding: 5px;
+}
+
+.episode h3 {
+    padding: 10px;
+}
+.episode-overview{
+    font-size: 15px;
+    font-style: italic;
+
+}
+.episode-datetime{
+    font-size: 12px;
+    font-style: italic;
+
+}
+
+.episodeInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imgless {
+    height: 100%;
+}
+
+.episodeInfo h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#logInOut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#BTNsDiv {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rebeccapurple;
+    z-index: 4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+}
+
+#seperator {
+    height: 25px;
+    align-self: center;
+    width: 2px;
+    margin: 0px 5px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.534);
+}
+#signupPopup,#loginPopup{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+#signupForm > h1{
+    margin-bottom: 10px;
+}
+#profile-pic-icon{
+    display: none;
+    border:1px solid rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container{
+    max-width: 800px;
+    min-width: 500px;
+    width: 80%;
+    text-align: center;
+    color: white;
+    display:flex;
+    flex-direction: column;
+}
+#signupForm > div {
+    width: 100%;
+}
+a h2{
+    text-decoration: underline;
+    color:white;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.asterisk{
+    height: 23px;
+    width: 23px;
+    background-image: radial-gradient(#F00 15%, transparent 16%), radial-gradient(#F00 15%, transparent 16%);
+    position: absolute;
+    right: 33%;
+    top: 18%;
+}
+#confirmPassword{
+    display: flex;
+    flex-direction: column;
+}
+#message{
+    color:#F00;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#signupForm .fullName{
+    display: flex;
+    justify-content: space-evenly;
+    width: 64%;
+}
+
+#signupForm .fullName input{
+    margin: 5px 1px;
+    min-width: 91px;
+    width: 100%;
+}
+
+.red-star {
+    color: red;
+}
+
+#genreTB{
+    margin-left:55px;
+}
+#uploadImg{
+    width: 70px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+#uploadImg:hover{
+   transform: scale(1.1);
+}
+#signupForm #submitBTN{
+    font-size: 15px;
+    width: 125px;
+        padding: 10px 30px;
+        background-color: #6b3186;
+        border-radius: 5px;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+}
+
+.genreSelect, .genderSelect{
+    width:37.5%;
+    margin: 5px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#signupPopup input[required]{
+    background-image: radial-gradient(#F00 15%, transparent 16%), radial-gradient(#F00 15%, transparent 16%);
+    background-size: 23px 23px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+#signupForm input{
+    width:60%;
+    margin: 5px auto;
+    max-width: 500px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#goToInsertImg{
+    position: fixed;
+    top:5%;
+    left:5%;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+
+#signupForm ,#loginForm{
+    position: relative;
+    max-width: 700px;
+    border-radius: 20px;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.822);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+#loginForm{
+    max-width: 400px;
+}
+h5{
+    text-decoration: underline;
+    margin:8px;
+    cursor: pointer;
+}
+
+#userIsNotLogged {
+    width: 100%;
+}
+
+#signInUp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userIsLogged {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#general h2 {
+    margin: 40px auto 0px auto;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width:600px) {
+    #ph {
+        width: 90%;
+    }
+    #info {
+        transform: translateY(0%);
+    }
+}
+.suggestions-container{
+    box-shadow: inset 0px 0px 10px #141E30;
+    margin: 15px auto;
+    width: 100%;
+    background-color: #fffffff3;
+}
+#popularContainer,#trendingContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    margin: 15px 0px;
+    margin-bottom: 25px;
+}
+.tvShowCard{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+.tvShowCardTitle {
+    margin-top: 5px;
+    word-wrap: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.tvShowCardDate {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+}
+
+.suggestionsTitle {
+    padding: 10px 0px 0px 10px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.tvShowCard .tvshowImgPopup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tvShowCard img {
+    height: 180px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    cursor: pointer;
+    margin: auto;
+}
+.tvshowImgPopup:hover {
+    /* animation: bubblingPop 0.4s forwards, openTvShowPop 0.5s 0.6s forwards; */
+    animation: bubblingPop 0.4s forwards;
+}
+@keyframes bubblingPop{
+    0% {transform: scale(1);}
+    20% {transform: scale(0.98);}
+    80% {transform: scale(1.07);}
+    100% {transform: scale(1.05);}
+}
+
+#tvshowname{
+    text-decoration: underline;
+}
+#suggestions {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    height: 315px;
+    transition: all 0.5s cubic-bezier(0.68, -0.25, 0.27, 1.25);
+}
+
+
+.viewMore {
+    cursor: pointer;
+    bottom: 50%;
+    padding: 5px;
+    width: 30px;
+    position: absolute;
+    transform: translateY(-50%);
+    
+}
+.bottomLocation > p ,.viewLess > p {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(126, 126, 126);
+}
+.bottomLocation{
+    cursor: pointer;
+    padding: 5px;
+    position:absolute;
+    bottom:-70px;
+    bottom:-55px;
+    left:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.viewLess{
+    /* transform: rotate(-90deg);    */
+    left:40%;
+    cursor: pointer;
+    padding: 5px;
+    position:absolute;
+    bottom:-70px;
+    bottom:-55px;
+    left:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.viewLess > img {
+    transform: translate(-50%,-50%);
+    transform: rotate(-90deg);
+    height: 40px;
+    width: 40px;
+    padding:10px;
+}
+.bottomLocation img{
+    height: 40px;
+    width: 40px;
+    padding:10px;
+    transform: translate(-50%,-50%);
+    transform: rotate(90deg);
+}
+
+    .bottomLocation img:hover {
+        animation: bouncingDownArrow 0.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes bouncingDownArrow {
+    from {
+        transform: translateY(0px) rotate(90deg);
+    }
+
+    to {
+        transform: translateY(5px) rotate(90deg);
+    }
+}
+
+.viewLess img:hover {
+    animation: bouncingUpArrow 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncingUpArrow {
+    from {
+        transform: translateY(0px) rotate(-90deg);
+    }
+
+    to {
+        transform: translateY(-5px) rotate(-90deg);
+    }
+}
+
+.viewMore:hover {
+    animation: bouncingRightArrow 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bouncingRightArrow {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translate(5px, -50%);
+    }
+    /* something */
+}
+
+.suggestionsDiv {
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#emailPasswordInput{
+    width:100%;
+}
+#loginForm #emailPasswordInput input {
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    width: 80%;
+    max-width: 250px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#emailSubmit, #checkEmailResetPass {
+    margin-left: 5px;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #6b3186;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    cursor: pointer;
+}
+#emailSubmit{
+    margin-top:10px;
+}
+#login-signup-modal{
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 10;
+}
+#login-signup-modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+#body.active{
+    filter: blur(10px);
+    pointer-events: none;
+}
+.tvShowCard .precentage{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(25%,5%);
+    pointer-events: none;
+}
+#filterTitle{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+#advancedSearchBar {
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: 440px;
+    background: gold;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+body select{
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 200px;
+}
+.genreSelectDiv{
+    position: relative;
+}
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+li img{
+    height: 75px;
+    margin-right: 10px;
+}
+#searchByAdvancedDiv{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#searchByAdvanced{
+    margin: 5px 0;
+    padding: 2px;
+    height: 15px;
+    width: 15px;
+}
+.checkboxes {
+    border: 1px solid rgb(85, 85, 85);
+    padding: 10px;
+    width: 180px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background: white;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.507);
+  }
+.genreSelect{
+    z-index: 0;
+}
+.checkboxes label {
+    display: block;
+    padding: 5px;
+  }
+  
+.checkboxes label:hover {
+    background-color: #1e8fff70;
+    border-radius: 10px;
+}
+
+#signupPopup #loader {
+    display: none;
+    z-index: 10;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    transition: all 0.2s ease-in-out;
+}
+#please-wait{
+    padding:10px;
+    text-align: center;
+    
+}
+
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}

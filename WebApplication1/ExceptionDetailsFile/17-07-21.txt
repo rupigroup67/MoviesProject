@@ -1,0 +1,349 @@
+-----------Exception Details on  07/17/2021 2:48:37 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:48:37 PM
+
+Error Line No : ine 109
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Violation of UNIQUE KEY constraint 'UQ__Users_20__AB6E616461F08603'. Cannot insert duplicate key in object 'dbo.Users_2021'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/Users
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:49:49 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:49:49 PM
+
+Error Line No : ine 109
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Violation of UNIQUE KEY constraint 'UQ__Users_20__AB6E616461F08603'. Cannot insert duplicate key in object 'dbo.Users_2021'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/Users
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:53:48 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:53:48 PM
+
+Error Line No : ine 109
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Violation of UNIQUE KEY constraint 'UQ__Users_20__AB6E616461F08603'. Cannot insert duplicate key in object 'dbo.Users_2021'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/Users
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:54:01 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:54:01 PM
+
+Error Line No : ine 109
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Violation of UNIQUE KEY constraint 'UQ__Users_20__AB6E616461F08603'. Cannot insert duplicate key in object 'dbo.Users_2021'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/Users
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:54:03 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:54:03 PM
+
+Error Line No : ine 109
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : Violation of UNIQUE KEY constraint 'UQ__Users_20__AB6E616461F08603'. Cannot insert duplicate key in object 'dbo.Users_2021'.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/Users
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:56:35 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:56:35 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:57:09 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:57:09 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:58:18 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:58:18 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:58:19 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:58:19 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:58:27 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:58:27 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 2:59:11 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 2:59:11 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 4:17:20 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 4:17:20 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 4:17:56 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 4:17:56 PM
+
+Error Line No : line 68
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : String or binary data would be truncated.
+The statement has been terminated.
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes/
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+
+-----------Exception Details on  07/17/2021 6:21:36 PM-----------------
+-------------------------------------------------------------------------------------
+
+
+
+Log Written Date: 07/17/2021 6:21:36 PM
+
+Error Line No : line 52
+
+Error Message: SqlException
+
+Exception Type: System.Data.SqlClient.SqlException
+
+Error Location : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+ Error Page Url: https://localhost:44371/api/UserEpisodes?tvshowID=84958&userID=72&seasonNumber=1
+
+User Host IP: 
+
+
+--------------------------------*End*------------------------------------------
+
+
+

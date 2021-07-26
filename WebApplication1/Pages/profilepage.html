@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./personal-profile.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCEhot0CDba07QuCHQ38aUB-EkSEUveVm4"></script>
+
+</head>
+
+<body onload="loadVars()">
+    <nav>
+		<div id="navBar">
+			<div id="logo">
+				<img onclick="location.href='homepage.html'" src="https://img.icons8.com/cotton/64/000000/tv-show.png"/>
+			</div>
+			<div id="links">
+				<button onclick="ToggleModal('login')" id="loginBTN">Log in</button>
+				<button onclick="ToggleModal('signup')" id="signupBTN">Sign up</button>
+			</div>
+			<div id="profile">
+				<p onclick="Logout()">Disconnect</p>
+				<img onclick="location.href='profilepage.html'" id="profile-picture" src="">
+			</div>
+		</div>
+	</nav>
+    <div class="profile-info-div">
+        <div class="personal-info">
+            <div class="profile-img">
+                <img id="user-info-profile-pic" src="">
+                <img id="selectImg" src="https://image.flaticon.com/icons/png/512/3514/3514917.png
+                " alt="">
+            </div>
+            <div class="about-me">
+                <form id="about-me-list">
+                    Name: <input disabled data-field="Name" class="user-info" id="userName" value="">
+                    Surname: <input disabled data-field="Surname" class="user-info" id="userLastName" value="">
+                    Nickname: <input disabled data-field="Nickname" class="user-info-nickname" id="userNickname" value="">
+                    Date Of Birth:<input disabled type="date" data-field="DateOfBirth" id="userDOB" class="user-info"placeholder="Date Of Birth" value="1950-02-02" required min="1950-01-01"
+                        max="2009-01-01">
+                    Gender: <select disabled data-field="Gender" name="Gender" id="userGender" class="genderSelect user-info" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="transgender">Transgender</option>
+                        <option value="two-spirit">Two-Spirit</option>
+                        <option value="non-binary">Non-Binary</option>
+                        <option value="genderqueer">Genderqueer</option>
+                        <option value="gender-expression">Gender Expression</option>
+                        <option value="gender-fluid">Gender Fluid</option>
+                        <option value="gender-neutral">Gender Neutral</option>
+                        <option value="other">Other...</option>
+                    </select>
+                    Phone Number: <input disabled data-field="PhoneNumber" class="user-info" id="userPhoneNum" value="">
+                    Address: 
+                    <div>
+                        <input disabled type="text" id="search_input" class="user-info" id="userAddress"  placeholder="Address" required>
+                        <input type="hidden" id="loc_lat" />
+                        <input type="hidden" id="loc_long" />
+                    </div>
+                    Favorite Genre: <select disabled data-field="Genre" name="Genre" id="UserFavGenre" class="genreSelect user-info">
+                        <option value="none">None</option>
+                        <option value="action">Action</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="fairytales">Fairytales</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="science fiction">Science Fiction</option>
+                        <option value="horror">Horror</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="other">Other...</option>
+                    
+                    </select>
+                </form>
+            </div>
+            <div class="edit-profile">
+                <button onclick="editProfile()" id="edit-profile-btn">
+                    Edit Profile
+                </button>
+                <button onclick="saveChanges()" id="save-hanges-btn">
+                    Save Changes
+                </button>
+            </div>
+        </div>
+        <div class="activity">
+            <div class="liked-shows">
+                <div class="suggestionsDiv">
+                    <p class="suggestionsTitle"></p>
+                    <div id="popularContainer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="likedEpisodes">
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+<script src="../Scripts/nav.js"></script>
+<script src="../Scripts/firebaseConfig.js"></script>
+<script src="../Scripts/firebase.js"></script>
+<script src="../Scripts/signupLogin.js"></script>
+<script src="../Scripts/profilepage.js"></script>
+
+</html>

@@ -1,0 +1,250 @@
+.slider{
+  width: 850px;
+  height: 450px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.603);
+  overflow: hidden;
+  display: none;
+}
+
+.slides{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 100%;
+  transition: all 0.7s ease-in-out;
+}
+
+.slide img{
+  width: 850px;
+  height: 450px;
+  object-fit: cover;
+
+  position:relative;
+  z-index:-1;
+  display:block;
+}
+
+.image-gradient{
+  display:inline-block;
+  background: -moz-linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0) 90%); /* FF3.6+ */
+  background: -webkit-gradient(linear, to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0) 90%); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0) 90%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0) 90%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0) 90%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0) 90%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  box-shadow: 0 0 5px black; 
+  background-color: rgba(122, 122, 122, 0.4); 
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 15px;
+}
+
+.manual-btn:hover{
+  background: rgb(82, 82, 82);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+#radio2:checked ~ .first{
+  margin-left: -100%;
+}
+#radio3:checked ~ .first{
+  margin-left: -200%;
+}
+#radio4:checked ~ .first{
+  margin-left: -300%;
+}
+#radio5:checked ~ .first{
+  margin-left: -400%;
+}
+
+.navigation-auto{
+  position: absolute;
+  top: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.navigation-auto div{
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 15px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: white;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+  background: white;
+}
+
+#leftBTN{
+  position: absolute;
+  z-index: 2;
+  top: 45%;
+  left: 2%;
+  background-color: rgba(255, 255, 255, 0.507);
+  padding: 5px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #000;
+
+}
+#rightBTN{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.507);
+  z-index: 2;
+  padding: 5px;
+  top: 45%;
+  right: 2%;
+  transform: translateY(-50%);
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #000;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #000;
+    outline: 1px #000;
+    margin-bottom: 50px;
+  }
+  
+.slider h2{
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px,
+             #000 0px 0px 2px,   #000 0px 0px 2px,   #000 0px 0px 2px;
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+  .slides{
+    width: 850px;
+  height: 450px;
+    display: flex;
+  }
+  
+  .slide{
+    position: relative;
+  }
+ 
+  
+  .slide h1{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    color: #fff;
+    font-size: 30px;
+    transform: translateX(-50%);
+  }
+  .slide h1 span{
+    display: block;
+    color: #ffe600;
+    margin-top: 5px;
+    margin-left: 40px;
+  }
+  
+  .languagesUsed{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .languagesUsed h4{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-style: italic;
+  }
+  .languagesUsed > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 10px;
+  }
+  .languagesUsed > div h5 {
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: none;
+    cursor: auto;
+    position: static;
+  }
+  .imgsLang img {
+    width: 120px;
+    height: 180px;
+    margin: 0 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.849);
+    z-index: 5;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .imgsLang img:hover{
+    transform: scale(1.05);
+  }
+
+  .carousel-tvshow-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slider .languageUsed .carousel-tvshow-info .precentage{
+  }

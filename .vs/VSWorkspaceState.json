@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WebApplication1",
+    "\\WebApplication1\\Controllers",
+    "\\WebApplication1\\Models",
+    "\\WebApplication1\\Models\\DAL",
+    "\\WebApplication1\\Pages",
+    "\\WebApplication1\\Scripts"
+  ],
+  "SelectedNode": "\\WebApplication1\\Models\\DAL\\UsersDataServices.cs",
+  "PreviewInSolutionExplorer": false
+}

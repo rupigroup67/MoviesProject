@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="precentage-circle.css">
+    <link rel="stylesheet" href="tvshowpage.css">
+    <script src="../Scripts/ajaxCalls.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCEhot0CDba07QuCHQ38aUB-EkSEUveVm4"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    </script>
+</head>
+
+<body>
+    <nav>
+		<div id="navBar">
+			<div id="logo">
+				<img onclick="location.href='homepage.html'" src="https://img.icons8.com/cotton/64/000000/tv-show.png"/>
+			</div>
+			<div id="links">
+				<button onclick="ToggleModal('login')" id="loginBTN">Log in</button>
+				<button onclick="ToggleModal('signup')" id="signupBTN">Sign up</button>
+			</div>
+			<div id="profile">
+				<p onclick="Logout()">Disconnect</p>
+				<img onclick="location.href='profilepage.html'" id="profile-picture" src="">
+			</div>
+		</div>
+	</nav>
+    <div id="body">
+        <div class="cover"> 
+            <iframe id="player" width="100%" height="100%" src=""
+                frameborder="0"allow="autoplay" allowfullscreen>
+            </iframe>
+            <img hidden id="background-color-detector" onload src="" crossorigin>
+        </div>
+        <div id="loadtvshows">
+            <div class="tvShowInfo">
+                <div class="tvshowallinformation">
+                    <h2 id="tvshowname"></h2><br>
+                    <div class="general-info">
+                        <div class="tvshow-desc">
+                            <p id="tvshowdesc"></p>
+                            <button id="showMoreDesc" onclick="showMoreDesc()">Show less...</button>
+                        </div>
+                        <div class="tvshow-information">
+                            <p>Date published: <span id="tvshowairdate"></span></p>
+                            <p>Number of seasons: <span id="tvshownumofseasons"></span></p>
+                            <p>Genre: <span id="tvshowgenre"></span></p>
+                            <div id="tvshowrate"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="displayEpisodes">
+                    <div class="show-seasons">
+                        <h2>Episodes:</h2>
+                        <div class="selectContainer">
+                            <select id="select-season" onchange="findSeasonsNumberErrorCB(this.value)">
+                            </select>
+                        </div>
+                    </div>
+                    <div id="episodesListPH"></div>
+                    <div class="crew-cast">
+                        <h2>Cast</h2>
+                        <div class="castDiv"></div>
+                    </div>
+                    <div class="reviews-div">
+                        <h2>Reviews</h2>
+                        <div class="reviewsList"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="tvshowchat">
+                <div id="chatTitle">
+                    <h3>TITLE</h3>
+                    <hr>
+                </div>
+                <div id="chatmessages"></div>
+                <div id="sendMessage">
+                    <textarea disabled oninput="checkMessage(this.value)" id="messageBody" type="text" placeholder="your message"></textarea>
+                    <img id="sendBTN" onclick="sendMessage($('#messageBody').val())" src="./images/sendBlack.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="login-signup-modal"></div>
+</body>
+<script src="../Scripts/firebaseConfig.js"></script>
+<script src="../Scripts/firebase.js"></script>
+<script src="../Scripts/nav.js"></script>
+<script src="../Scripts/signupLogin.js"></script>
+<script src="../Scripts/tvshowpage.js"></script>
+<script src="../Scripts/generalScripts.js"></script>
+<script src="../Scripts/chat.js"></script>
+</html>

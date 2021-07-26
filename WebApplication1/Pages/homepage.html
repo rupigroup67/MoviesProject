@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="tempCarousel.css">
+	<link rel="stylesheet" href="carousel.css">
+	<link rel="stylesheet" href="precentage-circle.css">
+	<script src="../Scripts/ajaxCalls.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+		</script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCEhot0CDba07QuCHQ38aUB-EkSEUveVm4"></script> -->
+
+</head>
+
+<body onload="loadVars()">
+	<nav>
+		<div id="navBar">
+			<div id="logo">
+				<img onclick="location.href='homepage.html'" src="https://img.icons8.com/cotton/64/000000/tv-show.png"/>
+			</div>
+			<div id="links">
+				<button onclick="ToggleModal('login')" id="loginBTN">Log in</button>
+				<button onclick="ToggleModal('signup')" id="signupBTN">Sign up</button>
+			</div>
+			<div id="profile">
+				<p onclick="Logout()">Disconnect</p>
+				<img onclick="location.href='profilepage.html'" id="profile-picture" src="">
+			</div>
+		</div>
+	</nav>
+	<div id="welcome">
+		<h1 id="nameWelcoming"></h1>
+		<div id="search">
+			<input type="text" oninput="autoCompleteSearch(this.value)" placeholder="Search TV-Show" id="tvShowName" />
+			<button onclick="goToTvShowPage(`${$('#tvShowName').val()}`)"
+				id="getTV" data-track='hover'>Search
+			</button>
+			<button id="advSearchBTN" onclick="openAdvanceSearch()">Adv. Search</button>
+			<div id="autoComplete">
+				<ul>
+				</ul>
+			</div>
+		</div>
+		<div id="advancedSearchBar">
+			<div id="searchByAdvancedDiv">
+				Search by<br>actors' name<input type="checkbox" id="searchByAdvanced"> </input>
+			</div>
+		</div>
+	</div>
+	<div id="body">
+		<div id="suggestions">
+			<div class="suggestionsDiv">
+				<div class="recommendedDiv">
+					<div class="slider">
+						<div class="slides">
+							<h2 id="recommendedForYou">Recommended for you!</h2>
+							<img id="rightBTN" onclick="moveToNextSlide()" src="./images/right-arrow.png" />
+							<img id="leftBTN" onclick="moveToPrevSlide()" src="./images/right-arrow.png" />
+							<input type="radio" name="radio-btn" id="radio1">
+							<input type="radio" name="radio-btn" id="radio2">
+							<input type="radio" name="radio-btn" id="radio3">
+							<input type="radio" name="radio-btn" id="radio4">
+							<input type="radio" name="radio-btn" id="radio5">
+							<div class="slide first">
+								<div class="slide-info">
+									<img src="" alt="">
+									<h2></h2>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-info">
+									<img src="" alt="">
+									<h2></h2>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-info">
+									<img src="" alt="">
+									<h2></h2>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-info">
+									<img src="" alt="">
+									<h2></h2>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-info">
+									<img src="" alt="">
+									<h2></h2>
+								</div>
+							</div>
+							<div class="navigation-auto">
+								<div class="auto-btn1"></div>
+								<div class="auto-btn2"></div>
+								<div class="auto-btn3"></div>
+								<div class="auto-btn4"></div>
+								<div class="auto-btn5"></div>
+							</div>
+						</div>
+						<div class="navigation-manual">
+							<label for="radio1" class="manual-btn"></label>
+							<label for="radio2" class="manual-btn"></label>
+							<label for="radio3" class="manual-btn"></label>
+							<label for="radio4" class="manual-btn"></label>
+							<label for="radio5" class="manual-btn"></label>
+						</div>
+					</div>
+				</div>
+				<!-- <p id="filterTitle">Filter:</p>
+				<div class="multiselect">
+					<div class="genreSelectDiv">
+						<div class="selectBox" onclick="showCheckboxes()">
+							<select class="selectGenre">
+								<option>Choose genre</option>
+							</select>
+							<div class="overSelect"></div>
+						</div>
+						<div class="genreCheckboxes checkboxes">
+							<label for="one">
+							</label>
+						</div>
+					</div>
+				</div> -->
+				<div class="suggestions-container">
+					<div class="popularTitleAndFilter">
+						<p class="suggestionsTitle">Popular</p>
+					</div>
+					<div id="popularContainer"></div>
+					<div class="trendingTitleAndFilter">
+						<p class="suggestionsTitle">Trending</p>
+					</div>
+					<div id="trendingContainer"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="login-signup-modal"></div>
+</body>
+<script src="../Scripts/firebaseConfig.js"></script>
+<script src="../Scripts/firebase.js"></script>
+<script src="../Scripts/nav.js"></script>
+<script src="../Scripts/signupLogin.js"></script>
+<script src="../Scripts/carousel.js"></script>
+<script src="../Scripts/homepage.js"></script>
+<script src="../Scripts/generalScripts.js"></script>
+<script src="../Scripts/suggetedMovies.js"></script>
+
+</html>
